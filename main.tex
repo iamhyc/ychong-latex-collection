@@ -53,12 +53,26 @@
 \newcommand{\delete}[2]{}
 \newcommand{\needref}[1]{\text{[#1]}}
 %---------------------------------------------------------------% user-defined
+\newcommand{\AP}{\dagger}
+\newcommand{\ES}{\ddagger}
+\newcommand{\apSet}{\mathcal{K}}
+\newcommand{\esSet}{\mathcal{M}}
+\newcommand{\ccSet}{\mathcal{X}}
+\newcommand{\jSpace}{\mathcal{J}}
+\newcommand{\Stat}{\mathbf{S}}
+\newcommand{\Obsv}{\mathcal{Y}}
+\newcommand{\Policy}{\vecG{\Omega}}
+\newcommand{\Delay}{\vecG{\mathcal{D}}}
+\newcommand{\Baseline}{\vecG{\Pi}}
+\newcommand{\algname}{Solver}
 
+\newcommand{\brlatency}{signaling latency}
+% \newcommand{\brpoint}{\emph{broadcast point}}
 %---------------------------------------------------------------%
 
 
 \begin{document}
-    \title{Main Title}
+    \title{Distributed Job Dispatching in Edge Computing Networks with Random Uploading Latency: A Low-Complexity POMDP Approach}
 
     \author{
         Yuncong Hong
@@ -66,21 +80,22 @@
 
     \maketitle
 
-    % \input{src/00-abstract}
-    % \input{src/01-intro}
+    \input{src/00-abstract}
+    \input{src/01-intro}
     % \input{src/02a-background}
     % \input{src/02b-motivation}
 
-    % \input{src/03a-model}
-    % \input{src/03b-formulation}
+    \input{src/03a-model}
+    \input{src/03b-formulation}
 
-    % \input{src/04-algorithm}
-    % \input{src/05-evaluation}
-    % \input{src/06-conclusion}
+    \input{src/04-algorithm}
+    \input{src/05-evaluation}
+    \input{src/06-conclusion}
+    \input{src/07-future}
 
     % \clearpage
     \bibliographystyle{IEEEtrans}
     \bibliography{references/final.bib}
 
-    % \input{src/99-appendix}
+    \input{src/99-appendix}
 \end{document}
