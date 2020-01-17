@@ -1,0 +1,86 @@
+\documentclass[journal, 12pt, onecolumn, draftclsnofoot]{IEEEtran} %JSAC 20'
+\usepackage[linesnumbered,vlined,ruled]{algorithm2e}
+\usepackage{algorithmic}
+\usepackage{etoolbox}
+\usepackage{cite}
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{dcolumn}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{soul}
+\usepackage{mathtools}
+\graphicspath{ {./images/} }
+%---------------------------------------------------------------%
+\newtheorem{definition}{Definition}   % 
+\theoremstyle{definition}             % alter theorem style: <definition>
+\newtheorem{program}{Program}         % [program]
+\newtheorem{assumption}{Assumption}   % [assumption]
+\newtheorem{example}{Example}         % [example]
+\newtheorem{Algorithm}{Algorithm}     % [algorithm]
+\newtheorem{policy}{Policy}           % [policy]
+\newtheorem{problem}{Problem}         % [problem]
+\theoremstyle{remark}                 % alter theorem style: <remark>
+\newtheorem{remark}{Remark}           % [remark]
+\theoremstyle{plain}                  % alter theorem style: <plain>
+\newtheorem{theorem}{Theorem}         % [theorem]
+\newtheorem{lemma}{Lemma}             % [lemma]
+\newtheorem{corollary}{Corollary}     % [corollary]
+%---------------------------------------------------------------% math symbols
+\newcommand{\eq}{=}
+\newcommand{\domZ}{\mathbb{Z}_{*}}
+\newcommand{\domP}{\mathbb{Z}_{*}}
+\newcommand{\vecOne}{\mathbf{1}}
+\newcommand{\ind}{\mathbf{I}}
+\newcommand{\mat}{\mathbf}
+\newcommand{\Poisson}{\text{Poisson}}
+\newcommand{\Bernoulli}{\text{Bernoulli}}
+\newcommand{\define}{\triangleq}
+\newcommand{\leadto}{\Rightarrow}
+\newcommand{\vecG}{\boldsymbol}
+\renewcommand{\vec}{\mathbf}
+\DeclarePairedDelimiter{\set}{\{}{\}}
+\DeclarePairedDelimiter{\norm}{|}{|}
+\DeclarePairedDelimiter{\Inorm}{\|}{\|_1}
+\DeclarePairedDelimiter{\Paren}{\bigg(}{\bigg)}
+\DeclarePairedDelimiter{\Bracket}{\bigg[}{\bigg]}
+\DeclarePairedDelimiter{\Brace}{\bigg\{}{\bigg\}}
+%---------------------------------------------------------------% comments
+\newcommand{\fixit}[1]{{\color{red}{#1}}}
+\newcommand{\accept}[1]{#1}
+\newcommand{\comments}[1]{{\color{blue}{#1}}}
+\newcommand{\deny}[1]{\st{#1}}
+\newcommand{\delete}[2]{}
+\newcommand{\needref}[1]{\text{[#1]}}
+%---------------------------------------------------------------% user-defined
+
+%---------------------------------------------------------------%
+
+
+\begin{document}
+    \title{Main Title}
+
+    \author{
+        Yuncong Hong
+    }
+
+    \maketitle
+
+    % \input{src/00-abstract}
+    % \input{src/01-intro}
+    % \input{src/02a-background}
+    % \input{src/02b-motivation}
+
+    % \input{src/03a-model}
+    % \input{src/03b-formulation}
+
+    % \input{src/04-algorithm}
+    % \input{src/05-evaluation}
+    % \input{src/06-conclusion}
+
+    % \clearpage
+    \bibliographystyle{IEEEtrans}
+    \bibliography{references/final.bib}
+
+    % \input{src/99-appendix}
+\end{document}
