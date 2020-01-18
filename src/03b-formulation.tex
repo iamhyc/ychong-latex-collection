@@ -19,7 +19,7 @@ Specifically, the individual dispatching policy of one AP, the system dispatchin
 
     The aggregation of individual policy of all APs is referred to as the system dispatching policy $\Policy$.
     Thus,
-    {\small
+    {
     \begin{align}
         \Policy\Paren{ \Stat(t), \Delay(t) } \define \Brace{
             \Omega_{1}(\Stat_{1}(t), \mathcal{D}_{1}(t)), \dots, \Omega_{K}(\Stat_{K}(t),\mathcal{D}_{K}(t))
@@ -34,14 +34,13 @@ Hence, we define the cost function per broadcast interval as follows.
 
 \begin{definition}[Cost Function per Broadcast Interval]
     The cost function of the $t$-th broadcast interval with GSI $\Stat(t)$ is defined as
-    {\small
+    {
     \begin{align}
         g\Paren{\Stat(t)} \define
             \sum_{m\in\esSet,j\in\jSpace}
             \Brace{&
                 \sum_{k\in\apSet} \Inorm{\vec{R}^{(k)}_{m,j}(t,0)} + Q_{m,j}(t,0)
-                \nonumber\\
-                &~~~~~+ \beta \cdot I[Q_{m,j}(t,0)=L_{max}]
+                + \beta \cdot I[Q_{m,j}(t,0)=L_{max}]
             },
     \end{align}
     }where $\Inorm{\vec{x}}$ denotes the $L^1$-norm of the vector $\vec{x}$, and $\beta$ is the weight of overflow penalty.
@@ -64,16 +63,17 @@ Hence, the optimization of job dispatching policy can be formulated as the follo
 \end{align}
 
 If the GSI $\Stat(t)$ and \brlatency~$\Delay(t)$ are known to all the APs, the MDP in problem P1 can be solved via the following Bellman's equations as in \cite{sutton1998}.
+{\small
 \begin{align}
     &V\Paren{\Stat(t)} =g\Paren{\Stat(t)}
         + \gamma\mathbb{E}_{\Delay}\bigg\{
             \min_{\Policy(\Stat(t),\Delay(t))}
-            \nonumber\\
-            &\sum_{\Stat(t+1)} \Pr \Big\{ 
+            \sum_{\Stat(t+1)} \Pr \Big\{ 
                 \Stat(t+1) \Big| \Stat(t), \Policy(\Stat(t), \Delay(t)) \Big\} \cdot V\Big(\Stat(t+1)\Big)
             \bigg\},
     \label{eqn:sp_0}
 \end{align}
+}
 where the value function $V(\Stat(t))$ of the optimal policy $\Policy^{*}$ (if GSI and \brlatency~are known to all the APs) is defined as follows.
 \begin{align}
     &V\Paren{\Stat(t)} \define

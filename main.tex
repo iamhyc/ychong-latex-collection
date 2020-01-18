@@ -69,13 +69,24 @@
 \newcommand{\brlatency}{signaling latency}
 % \newcommand{\brpoint}{\emph{broadcast point}}
 %---------------------------------------------------------------%
-
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[LO]{Probationary Report}
+% \fancyhead[RO]{Yuncong Hong}
 
 \begin{document}
-    \title{Distributed Job Dispatching in Edge Computing Networks with Random Uploading Latency: A Low-Complexity POMDP Approach}
+    \title{
+        Distributed Job Dispatching Cooperation in Edge Computing Network with Outdated Information
+    }
 
     \author{
-        Yuncong Hong
+        \begin{tabular}{rl}
+            \textbf{Name: }&                Yuncong Hong \\
+            \textbf{University ID:}&        3030058647 \\
+            \textbf{Curriculum:}&           Doctor of Philosophy(4 years) \\
+            \textbf{Department:}&           Computer Science \\
+            \textbf{Principal Supervisor:}& Prof. Francis C.M. Lau
+        \end{tabular}
     }
 
     \maketitle
@@ -97,5 +108,5 @@
     \bibliographystyle{IEEEtrans}
     \bibliography{references/final.bib}
 
-    \input{src/99-appendix}
+    % \input{src/99-appendix}
 \end{document}
