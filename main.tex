@@ -11,6 +11,7 @@
 \usepackage{soul}
 \usepackage{mathtools}
 \graphicspath{ {./images/} }
+\usepackage{tabularx}
 %---------------------------------------------------------------%
 \newtheorem{definition}{Definition}   % 
 \theoremstyle{definition}             % alter theorem style: <definition>
@@ -83,13 +84,20 @@
         \begin{tabular}{rl}
             \textbf{Name: }&                Yuncong Hong \\
             \textbf{University ID:}&        3030058647 \\
-            \textbf{Curriculum:}&           Doctor of Philosophy(4 years) \\
-            \textbf{Department:}&           Computer Science \\
-            \textbf{Principal Supervisor:}& Prof. Francis C.M. Lau
+            \textbf{Curriculum:}&           Doctor of Philosophy (4 years) \\
+            \textbf{Department:}&           Department of Computer Science \\
+            \textbf{Supervisors:}&          Prof. CL Wang and Prof. FCM Lau 
         \end{tabular}
     }
 
     \maketitle
+    \fancypagestyle{firststyle}
+    {
+        \fancyhf{}
+        \fancyhead[LO]{Probationary Report}
+    }
+    \thispagestyle{firststyle}
+    
 
     \input{src/00-abstract}
     \input{src/01-intro}
