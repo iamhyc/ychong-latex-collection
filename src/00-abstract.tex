@@ -1,13 +1,12 @@
 \renewcommand{\abstractname}{\vspace{-\baselineskip}}
 \begin{abstract}
-    \comments{Edge computing system is the future, and it's deployed in the network with random network traffic.}
-    We consider the distributed job dispatching problem in an edge computing network residing in a Metropolitan Area Network (MAN), where the job arrivals, uploading latency and computation time are all random.
-    Specifically, multiple access points (APs) collect jobs from the mobile users, and upload each job to one edge server according to the job type.
-    \comments{The signaling model is designed that APs and edge servers periodically broadcast their local state information.}
-    The signaling latency of broadcast information is also random, and the APs update their job dispatching strategy according to outdated and partially observable broadcast information.
-    We formulate the distributed optimization of job dispatching strategies at all the APs as a partially observable Markov decision process (POMDP), whose minimization objective is a discount measurement of job delivery and computation time
-    While conventional solution for POMDP is impractical due to huge complexity, we propose a novel low-complexity solution framework to address the issue of algorithm complexity.
-    Specifically, we first derive the analytical expression of the approximate value function according to a baseline policy.
-    Based on it, the optimization of job dispatching strategy can be decoupled via an alternative policy iteration algorithm, so that the distributed policy iteration of each AP can be made according to the partially observable system state information.
-    Finally, an analytical performance lower bound is provided, despite of approximate MDP solution.
+    Edge computing is a promising technique for the blooming computation-intensive tasks at the mobile devices.
+    Multiple access points (APs) are deployed to collect jobs from the mobile users (MUs), and upload each job to one edge server according to the computation job type.
+    The edge computing network connecting APs and edge servers is considered which resides in a Metropolitan Area Network (MAN), and the transmission and propagation delays in the network  are all random due to unexpected network traffics from other services.
+    To facilitate the distributed cooperation of job dispatching at all APs, the signaling model is designed that APs and edge servers periodically broadcast their local state information.
+    The signaling latency of broadcast information is also random, and the APs should update their job dispatching strategy according to outdated and partially observable broadcast information.
+    In this work, the problem of distributed optimization of job dispatching strategies at all APs is formulated as a partially observable Markov decision process (POMDP), whose minimization objective is a discount measurement of job delivery and computation time.
+    While conventional solution for POMDP is impractical due to huge complexity, a novel low-complexity solution framework is proposed to address the issue of algorithm complexity.
+    Based on it, the optimization of job dispatching strategy can be decoupled via an alternative action update algorithm, so that the distributed policy iteration of each AP can be made according to the partially observable system state information.
+    Finally, an analytical performance lower bound is provided despite of approximate MDP solution.
 \end{abstract}
